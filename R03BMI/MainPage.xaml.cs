@@ -34,8 +34,7 @@ namespace R03BMI
                 }
 
                 double bmi = w / h / h;
-                int bmi2 = (int)(bmi * 10);
-                double bmi3 = (double)(bmi2 / 10.0);
+                double bmi2 = Math.Round(bmi,1,MidpointRounding.AwayFromZero);
 
                 if(bmi3 < 18.50)
                 {
@@ -53,9 +52,9 @@ namespace R03BMI
                 {
                     result.Text = "BMIが" + bmi3 + "の人は肥満（２度）です。";
                 }
-                else if(bmi >= 35.00 & bmi < 40.00)
+                else if(bmi >= 35.00 & -bmi < 40.00)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は肥満（３度）です。";
+                    result.Text = "BMIが" + bmi3 + "の人は肥満（３度）です。";;
                 }
                 else
                 {
