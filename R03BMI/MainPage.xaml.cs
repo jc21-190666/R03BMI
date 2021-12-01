@@ -36,29 +36,29 @@ namespace R03BMI
                 double bmi = w / h / h;
                 double bmi2 = Math.Round(bmi,1,MidpointRounding.AwayFromZero);
 
-                if(bmi3 < 18.50)
+                if(bmi2 < 18.50)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は低体重（痩せ）です。";
+                    result.Text = "BMIが" + bmi2 + "の人は低体重（痩せ）です。";
                 }
                 else if(bmi >= 18.50 & bmi < 25.00)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は普通体重です。";
+                    result.Text = "BMIが" + bmi2 + "の人は普通体重です。";
                 }
                 else if(bmi >= 25.00 & bmi < 30.00)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は肥満（１度）です。";
+                    result.Text = "BMIが" + bmi2 + "の人は肥満（１度）です。";
                 }
                 else if(bmi >= 30.00 & bmi < 35.00)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は肥満（２度）です。";
+                    result.Text = "BMIが" + bmi2 + "の人は肥満（２度）です。";
                 }
                 else if(bmi >= 35.00 & -bmi < 40.00)
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は肥満（３度）です。";;
+                    result.Text = "BMIが" + bmi2 + "の人は肥満（３度）です。";;
                 }
                 else
                 {
-                    result.Text = "BMIが" + bmi3 + "の人は肥満（４度）です。";
+                    result.Text = "BMIが" + bmi2 + "の人は肥満（４度）です。";
                 }
             }
 
